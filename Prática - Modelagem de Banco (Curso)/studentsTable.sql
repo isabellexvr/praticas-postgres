@@ -1,0 +1,7 @@
+CREATE TABLE students(
+    "id" SERIAL NOT NULL PRIMARY KEY,
+    "name" TEXT NOT NULL,
+    "cpf" VARCHAR(11) NOT NULL UNIQUE,
+    "email" TEXT NOT NULL UNIQUE,
+    "classId" INTEGER NOT NULL REFERENCES classes(id)
+);

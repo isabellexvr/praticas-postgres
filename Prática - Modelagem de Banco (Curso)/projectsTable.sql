@@ -1,0 +1,6 @@
+CREATE TABLE projects(
+    "id" SERIAL NOT NULL PRIMARY KEY,
+    "name" TEXT NOT NULL UNIQUE,
+    "moduleId" INTEGER NOT NULL REFERENCES modules(id),
+    "deliveryDate" TIMESTAMP WITHOUT TIME ZONE NOT NULL
+);
