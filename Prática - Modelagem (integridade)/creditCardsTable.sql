@@ -8,4 +8,22 @@ CREATE TABLE creditCards (
     "expirationYear" SMALLINT NOT NULL,
     "password" VARCHAR(12) NOT NULL,
     "limit" INTEGER NOT NULL,
-)
+);
+
+/* corrigido */
+
+CREATE TABLE "creditCards" (
+    "id" SERIAL NOT NULL PRIMARY KEY,
+    "bankAccountId" INTEGER NOT NULL REFERENCES "bankAccount"("id"),
+    "name" TEXT NOT NULL,
+    "number" INTEGER NOT NULL UNIQUE,
+    "securityCode" TEXT NOT NULL,
+    "expirationMonth" INTEGER NOT NULL,
+    "expirationYear" INTEGER NOT NULL,
+    "password" TEXT NOT NULL,
+    "limit" INTEGER,
+);
+
+/* pode querer saber quantos meses/anos faltam para expirar
+
+nome pode ser customizado, então não precisa ser o fullname da outra tabela */

@@ -1,0 +1,5 @@
+CREATE TABLE companies(
+    "id" SERIAL NOT NULL PRIMARY KEY,
+    "acronym" TEXT NOT NULL UNIQUE,
+    "fullName" TEXT NOT NULL UNIQUE
+);
