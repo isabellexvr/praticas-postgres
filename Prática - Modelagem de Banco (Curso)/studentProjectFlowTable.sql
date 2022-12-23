@@ -7,3 +7,6 @@ CREATE TABLE "studentProjectFlow"(
     "studentDeliveryDate" TIMESTAMP WITHOUT TIME ZONE NOT NULL,
     "grade" "gradeType" NOT NULL
 );
+
+/* fazer tabela de notas pra mudar nota */
+

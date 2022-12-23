@@ -7,3 +7,5 @@ CREATE TABLE flights(
     "derpatureAirport" INTEGER NOT NULL REFERENCES airports(id),
     "arrivalAirport" INTEGER NOT NULL REFERENCES airports(id)
 );
+
+/* corrigido - tudo certo */ 
